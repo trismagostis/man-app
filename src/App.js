@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import RenderowanieWarunkowe from './RenderowanieWarunkowe';
+import FormBasic from './FormBasic';
+import FormSelect from './FormSelect';
+import FormBox from './FormBox';
+import RenderowanieClock from './RenderowanieClock';
 
 function App() {
   return (
@@ -17,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <RenderowanieClock />
       </header>
     </div>
   );
