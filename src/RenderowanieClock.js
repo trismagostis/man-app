@@ -6,13 +6,13 @@ class RenderowanieClock extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.tick(), 1000); //uruchamia funkcje co okreslony czas
+    this.timerID = setInterval(() => this.tick(), 1000); //uruchamia funkcje co okreslony czas
   }
   tick = () => {
     this.setState({ date: new Date() }); //renderowanie setState zawiera metode render
   };
   componentWillUnmount() {
-    clearInterval(); //przestaje uruchamiać funkcje tick
+    clearInterval(this.timerID); //przestaje uruchamiać funkcje tick
   }
 
   render() {
