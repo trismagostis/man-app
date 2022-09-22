@@ -5,8 +5,11 @@ import FormBasic from './FormBasic';
 import FormSelect from './FormSelect';
 import FormBox from './FormBox';
 import RenderowanieClock from './RenderowanieClock';
+import KomponentKlasowyObslugaZdarzen from './KomponentKlasowyObslugaZdarzenia';
+import PrzekazywanieDanychCalculator from './PrzekazywanieDanychCalculator';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -22,7 +25,7 @@ function App() {
         >
           Learn React
         </a>
-        <RenderowanieClock />
+        <PrzekazywanieDanychCalculator />
       </header>
     </div>
   );

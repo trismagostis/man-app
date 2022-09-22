@@ -1,3 +1,4 @@
+import React from 'react';
 class TemperatureInput extends React.Component {
   constructor(props) {
     super(props);
@@ -8,6 +9,10 @@ class TemperatureInput extends React.Component {
   };
 
   render() {
+    const scaleNames = {
+      c: 'Celsjuszach',
+      f: 'Fahrenheitach'
+    };
     const temperature = this.props.temperature;
     const scale = this.props.scale;
     return (

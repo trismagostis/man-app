@@ -6,7 +6,7 @@ class RenderowanieClock extends React.Component {
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000); //uruchamia funkcje co okreslony czas
+    this.timerID = setInterval(() => this.tick(), 1); //uruchamia funkcje co okreslony czas
   }
   tick = () => {
     this.setState({ date: new Date() }); //renderowanie setState zawiera metode render
@@ -16,6 +16,7 @@ class RenderowanieClock extends React.Component {
   }
 
   render() {
+    
     return (
       <div>
         <h2>Aktualny czas: {this.state.date.toLocaleTimeString()}.</h2>
