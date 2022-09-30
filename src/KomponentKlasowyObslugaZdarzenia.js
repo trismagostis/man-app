@@ -4,13 +4,13 @@ class KomponentKlasowyObslugaZdarzen extends React.Component {
     super(props);
     this.state = { isToggleOn: true };
   }
-
-//   handleClick = () => {
-//     this.setState((prevState) => ({
-//       isToggleOn: !prevState.isToggleOn,
-//     }));
-//   };
-
+  handleClick = () => {
+    this.setState((prevState) => {return{
+      
+        isToggleOn: !prevState.isToggleOn,
+      }
+  });
+  };
   render() {
     let napis = "";
     if (this.state.isToggleOn) {
@@ -18,16 +18,8 @@ class KomponentKlasowyObslugaZdarzen extends React.Component {
     } else {
       napis = "wylaczony";
     }
-    const handleClick = () => {
-        this.setState((prevState) => ({
-          isToggleOn: !prevState.isToggleOn,
-        }));
-      };
-    return (
-      <button onClick={handleClick}>
-        {napis}
-      </button>
-    );
+
+    return <button onClick={this.handleClick}>{napis}</button>;
   }
 }
 export default KomponentKlasowyObslugaZdarzen;

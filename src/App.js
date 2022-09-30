@@ -7,6 +7,7 @@ import FormBox from './FormBox';
 import RenderowanieClock from './RenderowanieClock';
 import KomponentKlasowyObslugaZdarzen from './KomponentKlasowyObslugaZdarzenia';
 import PrzekazywanieDanychCalculator from './PrzekazywanieDanychCalculator';
+import HooksBasic from './HooksBasic';
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
         >
           Learn React
         </a>
-        <PrzekazywanieDanychCalculator />
+        <HooksBasic />
       </header>
     </div>
   );

@@ -16,7 +16,7 @@ class FormBox extends React.Component {
     this.setState({
       [name]: value,
     });
-    alert(`Nazwa inputa ktry się zmienił ${name} wartość tego inputa ${value}`)
+    alert(`Nazwa inputa ktory się zmienił ${name} wartość tego inputa ${value}`)
   }
 
   render() {
